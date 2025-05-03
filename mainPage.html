@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project</title>
+
+  <link rel="stylesheet" href="style1.css">
+  <!--<style>
+    body{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 20px;
+      background-color: #f4f6f8;
+    }
+
+    .main-div-button{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .div-button-1{
+      display: flex;
+      width: 50%;
+      justify-content: center;
+    }
+
+    .div-button-2{
+      display: flex;
+      width: 50%;
+      justify-content: center;
+    }
+
+    .button-name-1{
+      border-radius: 0;
+      padding: 10px 60px;
+      transition: 0.5s;
+    }
+
+    .button-name-1:hover{
+      padding: 10px 70px;
+      box-shadow: 5px 5px 0px rgb(27, 255, 35);
+      transition: 0.5s;
+    }
+
+    .button-name-1:active{
+      padding: 10px 40px;
+      box-shadow: none;
+      transition: 0.1s;
+    }
+
+    .button-name-2{
+      border-radius: 0;
+      padding: 10px 60px;
+      transition: 0.5s;
+    }
+
+    .button-name-2:hover{
+      padding: 10px 70px;
+      box-shadow: 5px 5px 0px rgb(208, 52, 255);
+      transition: 0.5s;
+    }
+
+    .button-name-2:active{
+      padding: 10px 40px;
+      box-shadow: none;
+      transition: 0.1s;
+    }
+
+    .main-div-info{
+      margin-top: 20px;
+      width: 100%;
+      height: max-content;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: flex;
+    }
+
+  </style>-->
+</head>
+
+<body>
+  <div class="main-div-button">
+
+      <div class="div-button-1">
+        <button class="button-name-1" onclick="getInfo('jad')">
+          JAD
+        </button>
+      </div>
+      
+      <div class="div-button-2">
+        <button class="button-name-2" onclick="getInfo('lea')">
+          LEA
+        </button>
+      </div>
+  </div>
+
+  <div id="main-div-info"></div>
+
+  <script>
+    const info_div = document.getElementById("main-div-info");
+
+    function getInfo (name) {
+      if (name == "jad") {
+        info_div.innerHTML = `
+        <table>
+        <tr>
+          <th>TIME</th>
+          <th>MONDAY</th>
+          <th>TUESDAY</th>
+          <th>WEDNESDAY</th>
+          <th>THURSDAY</th>
+          <th>FRIDAY</th>
+        </tr>
+
+        <tr>
+          <td>9:30 - 10:45</td>
+          <td>Object Oriented for bus.</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Object Oriented for bus.</td>
+        </tr>
+
+        <tr>
+          <td>11:00 - 12:15</td>
+          <td>no class</td>
+          <td>Financial Management</td>
+          <td>no class</td>
+          <td>Financial management</td>
+          <td>no class</td>
+        </tr>
+
+        <tr>
+          <td>12:30 - 1:45</td>
+          <td>Financial Analysis</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Financial analysis</td>
+        </tr>
+
+        <tr>
+          <td>2:00 - 3:15</td>
+          <td>no class</td>
+          <td>Applied Biology</td>
+          <td>no class</td>
+          <td>Applied Biology</td>
+          <td>no class</td>
+        </tr>
+
+        <tr>
+          <td>3:30 - 4:45</td>
+          <td>no class</td>
+          <td class="ziad">Web Programming for bus.</td>
+          <td>no class</td>
+          <td class="ziad">Web Programming for bus.</td>
+          <td>no class</td>
+        </tr>
+
+         <tr>
+          <td>5:00 - 6:30</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Workshop Lab 1</td>
+          <td>no class</td>
+        </tr>
+
+
+      </table> 
+      `;
+
+      } else {
+        info_div.innerHTML = `
+        <table>
+        <tr>
+          <th>TIME</th>
+          <th>MONDAY</th>
+          <th>TUESDAY</th>
+          <th>WEDNESDAY</th>
+          <th>THURSDAY</th>
+          <th>FRIDAY</th>
+        </tr>
+
+        <tr>
+          <td>8:00 - 9:15</td>
+          <td>Accounting 2</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Accounting 2</td>
+        </tr>
+
+        <tr>
+          <td>9:30 - 10:45</td>
+          <td>Macroeconomics</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Macroeconomics</td>
+        </tr>
+
+        <tr>
+          <td>11:00 - 12:15</td>
+          <td>Mathematics of finance</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Mathematics of finance</td>
+        </tr>
+
+        <tr>
+          <td>12:30 - 1:45</td>
+          <td>Human ressources management</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Human ressources management</td>
+        </tr>
+
+        <tr>
+          <td>2:00 - 3:15</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+        </tr>
+
+        <tr>
+          <td>3:30 - 4:45</td>
+          <td>no class</td>
+          <td class="ziad">Web Programming for bus.</td>
+          <td>no class</td>
+           <td class="ziad">Web Programming for bus.</td>
+          <td>no class</td>
+        </tr>
+
+        <tr>
+          <td>5:00 - 6:30</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>no class</td>
+          <td>Workshop Lab 1</td>
+          <td>no class</td>
+        </tr>
+      </table> 
+      `;
+      }
+    }
+  </script>
+
+</body>
+</html>
