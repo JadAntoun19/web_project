@@ -1,0 +1,173 @@
+/* === BODY ===*/
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+  background-color: #f4f6f8;
+}
+
+/* === DIV FOR BUTTON ===*/
+.main-div-button{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-div-button{
+    flex-wrap: wrap;
+    height: max-content;
+  }
+
+  .div-button-1,
+  .div-button-2{
+    width: 100% !important;
+    margin: 5px 0px;
+  }
+  
+}
+
+/* === DIV FOR SIGNLE BUTTON BOTH LEFT AND RIGHT ===*/
+/* === #1 ===*/
+.div-button-1{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+/* === #2 ===*/
+.div-button-2{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+/* === BUTTON JAD ===*/
+.button-name-1{
+  border-radius: 0;
+  padding: 10px 60px;
+  transition: 0.1s;
+}
+
+/* === BUTTON JAD HOVER ===*/
+.button-name-1:hover{
+  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  transition: 0.25s;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/* === BUTTON JAD ACTIVE ===*/
+.button-name-1:active{
+  box-shadow: none;
+  transition: 0.1s;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+/* === BUTTON LEA ===*/
+.button-name-2{
+  border-radius: 0;
+  padding: 10px 60px;
+  transition: 0.5s;
+}
+
+/* === BUTTON LEA HOVER ===*/
+.button-name-2:hover{
+  box-shadow: 3px 3px 0px rgb(0, 0, 0);
+  transition: 0.25s;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/* === BUTTON LEA ACTIVE ===*/
+.button-name-2:active{
+  box-shadow: none;
+  transition: 0.1s;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+/* === DIV FOR TABLE ===*/
+.nothing{
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 500px;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  font-size: 100px;
+}
+
+#main-div-info{
+  margin-top: 20px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* === SCHEDULE TABLE ===*/
+table{
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.5);
+}
+
+/* ===  ALL ODD TABLE ROW ===*/
+tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* === ALL TABLE ROW HOVER ===*/
+tr:hover{
+  background-color: #eef2ff;
+}
+
+/* === FIRST 6 TABLE HEADER ===*/
+th:nth-child(-n+6){
+  background-color: rgb(79, 70, 229);
+  color: white;
+  padding: 16px;
+}
+
+/* === ALL TABLE DATA ===*/
+td{
+  padding: 10px;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* === TABLE DATA THAT HAS "WEB PROG FOR BUS." ===*/
+.ziad{
+  color: red;
+}
+
+
+/* === DIV FOR CV ===*/
+#main-div-info-2{
+  display: flex;
+  border-radius: 10px;
+  padding: 20px;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === DIV FOR CONTACT US ===*/
+.contact-us-div{
+  margin-top: 40px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(79, 70, 229);
+}
+
+a:active{
+  color: red;
+}
