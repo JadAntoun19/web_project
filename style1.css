@@ -126,6 +126,7 @@ body{
   #main-div-info{
     max-width: 100%;
     width: 100%;
+    overflow-x: auto;
   }
   
   table{
