@@ -14,20 +14,6 @@ body{
   height: 50px;
 }
 
-@media only screen and (max-width: 600px) {
-  .main-div-button{
-    flex-wrap: wrap;
-    height: max-content;
-  }
-
-  .div-button-1,
-  .div-button-2{
-    width: 100% !important;
-    margin: 5px 0px;
-  }
-  
-}
-
 /* === DIV FOR SIGNLE BUTTON BOTH LEFT AND RIGHT ===*/
 /* === #1 ===*/
 .div-button-1{
@@ -99,6 +85,12 @@ body{
   text-align: center;
   align-content: center;
   font-size: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nothing{
+    font-size: 60px
+  }
 }
 
 #main-div-info{
