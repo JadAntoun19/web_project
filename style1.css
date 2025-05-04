@@ -123,13 +123,14 @@ body{
     font-size: 60px !important;
   }
 
+  #main-div-info{
+    max-width: 100%;
+    width: 100%;
+  }
+  
   table{
     width: 100%;
     max-width: 100%;
-  }
-
-  td, th{
-    white-space: normal;
   }
 }
 
