@@ -5,6 +5,12 @@ body{
   background-color: #f4f6f8;
 }
 
+@media only screen and (max-width: 600px) {
+  body{
+    width: 100vw;
+  }
+}
+
 /* === DIV FOR BUTTON ===*/
 .main-div-button{
   display: flex;
@@ -90,6 +96,16 @@ body{
 }
 
 /* === DIV FOR TABLE ===*/
+#main-div-info{
+  margin-top: 20px;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* === INSIDE DIV TABLE WHEN EMPTY ===*/
 .nothing{
   width: 100%;
   background-color: black;
@@ -101,13 +117,10 @@ body{
   font-size: 100px;
 }
 
-#main-div-info{
-  margin-top: 20px;
-  width: 100%;
-  height: max-content;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
+@media only screen and (max-width: 600px) {
+  .nothing{
+    font-size: 60px !important;
+  }
 }
 
 /* === SCHEDULE TABLE ===*/
