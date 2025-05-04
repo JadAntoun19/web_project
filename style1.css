@@ -14,7 +14,7 @@ body{
   height: 50px;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .main-div-button{
     flex-wrap: wrap;
     height: max-content;
