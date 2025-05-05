@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project</title>
+
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+  <div class="main-div-button">
+
+      <div class="div-button-1">
+        <button class="button-name-1" onclick="getInfo('jad')">
+          JAD
+        </button>
+      </div>
+      
+      <div class="div-button-2">
+        <button class="button-name-2" onclick="getInfo('lea')">
+          LEA
+        </button>
+      </div>
+  </div>
+
+  <div id="main-div-info"> 
+    <div class="nothing">NOTHING</div>
+  </div>
+
+  <div id="main-div-info-2"></div>
+
+  <div class="contact-us-div">
+    <a href="contactUs.html">Contact us!</a>
+
+    <marquee>
+      Website created by Lea and Jad.
+    </marquee>
+  </div>
+
+  <script>
+    const info_div = document.getElementById("main-div-info");
+    const info_div_2 = document.getElementById("main-div-info-2");
+
+    function getInfo (name) {
+      if (name == "jad") {
+        info_div.innerHTML = `
+        <table class="big-screen">
+          <tr>
+            <th>TIME</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+          </tr>
+
+          <tr>
+            <td>9:30 - 10:45</td>
+            <td>Object Oriented for bus.</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Object Oriented for bus.</td>
+          </tr>
+
+          <tr>
+            <td>11:00 - 12:15</td>
+            <td>no class</td>
+            <td>Financial Management</td>
+            <td>no class</td>
+            <td>Financial management</td>
+            <td>no class</td>
+          </tr>
+
+          <tr>
+            <td>12:30 - 1:45</td>
+            <td>Financial Analysis</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Financial analysis</td>
+          </tr>
+
+          <tr>
+            <td>2:00 - 3:15</td>
+            <td>no class</td>
+            <td>Applied Biology</td>
+            <td>no class</td>
+            <td>Applied Biology</td>
+            <td>no class</td>
+          </tr>
+
+          <tr>
+            <td>3:30 - 4:45</td>
+            <td>no class</td>
+            <td class="ziad">Web Programming for bus.</td>
+            <td>no class</td>
+            <td class="ziad">Web Programming for bus.</td>
+            <td>no class</td>
+          </tr>
+
+          <tr>
+            <td>5:00 - 6:30</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Workshop Lab 1</td>
+            <td>no class</td>
+          </tr>
+        </table> 
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>MONDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>Object Oriented for bus.</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>Financial Analysis</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>TUESDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>Financial Management</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>Applied Biology</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td class="ziad">Web Programming for bus.</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>WEDNESDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>THURSDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>Financial Management</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>Applied Biology</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td class="ziad">Web Programming for bus.</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>Workshop Lab 1</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>FRIDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>Object Oriented for bus.</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>Financial Analysis</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+      `;
+
+      info_div_2.innerHTML = `
+        <div class="cv-div">
+          <div class="name-div">
+            <h1 style="font-size: 30px; text-align: center;">
+              Jad Antoun
+            </h1>
+          </div>
+
+          <div class="info-div">
+            <p>
+              Email: jad.hotmail.com | Phone: +961 71 080 251<br>
+              Location: jounieh, lebanon.
+            </p>
+          </div>
+
+          <div class="education-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Eduction
+            </h2>
+
+            <hr style="color:  rgb(79, 70, 229); margin: 0;">
+
+            <p>
+              Bachelor in Buisness Computing - Ziad University (2022 - 2026)
+            </p>
+          </div>
+
+          <div class="experience-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Experience
+            </h2>
+
+            <hr>
+
+            <ul>
+              <li><strong>Web Developer Intern</strong> at youtube (Summer 2025)</li>
+              <li><strong>Freelance Projects </strong> - Portfolio website, small business websites</li>
+            </ul>
+          </div>
+
+          <div class="skill-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Skills
+            </h2>
+
+            <hr>
+
+            <p>
+              HTML, CSS, JavaScript <br>
+              maybe react and some backend ... 
+            </p>
+          </div>
+        </div>
+      `;
+
+      } else {
+        info_div.innerHTML = `
+        <table class="big-screen">
+          <tr>
+            <th>TIME</th>
+            <th>MONDAY</th>
+            <th>TUESDAY</th>
+            <th>WEDNESDAY</th>
+            <th>THURSDAY</th>
+            <th>FRIDAY</th>
+          </tr>
+
+          <tr>
+            <td>8:00 - 9:15</td>
+            <td>Accounting 2</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Accounting 2</td>
+          </tr>
+
+          <tr>
+            <td>9:30 - 10:45</td>
+            <td>Macroeconomics</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Macroeconomics</td>
+          </tr>
+
+          <tr>
+            <td>11:00 - 12:15</td>
+            <td>Mathematics of finance</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Mathematics of finance</td>
+          </tr>
+
+          <tr>
+            <td>12:30 - 1:45</td>
+            <td>Human ressources management</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Human ressources management</td>
+          </tr>
+
+          <tr>
+            <td>2:00 - 3:15</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+          </tr>
+
+          <tr>
+            <td>3:30 - 4:45</td>
+            <td>no class</td>
+            <td class="ziad">Web Programming for bus.</td>
+            <td>no class</td>
+            <td class="ziad">Web Programming for bus.</td>
+            <td>no class</td>
+          </tr>
+
+          <tr>
+            <td>5:00 - 6:30</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>no class</td>
+            <td>Workshop Lab 1</td>
+            <td>no class</td>
+          </tr>
+        </table> 
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>MONDAY</th>
+            </tr>
+            <tr>
+              <td>8:00 - 9:15</td>
+              <td>Accounting 2</td>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>Macroeconomics</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>Mathematics of finance</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>Human ressources management</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>TUESDAY</th>
+            </tr>
+            <tr>
+              <td>8:30 - 9:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td class="ziad">Web Programming for bus.</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>WEDNESDAY</th>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>THURSDAY</th>
+            </tr>
+            <tr>
+              <td>8:30 - 9:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td class="ziad">Web Programming for bus.</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>Workshop Lab 1</td>
+            </tr>
+          </table>
+        </div>
+
+
+        <table class="small-screen">
+            <tr>
+              <th>TIME</th>
+              <th>FRIDAY</th>
+            </tr>
+            <tr>
+              <td>8:00 - 9:15</td>
+              <td>Accounting 2</td>
+            </tr>
+            <tr>
+              <td>9:30 - 10:45</td>
+              <td>Macroeconomics</td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:15</td>
+              <td>Mathematics of finance</td>
+            </tr>
+            <tr>
+              <td>12:30 - 1:45</td>
+              <td>Human ressources management</td>
+            </tr>
+            <tr>
+              <td>2:00 - 3:15</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>3:30 - 4:45</td>
+              <td>no class</td>
+            </tr>
+            <tr>
+              <td>5:00 - 6:30</td>
+              <td>no class</td>
+            </tr>
+          </table>
+        </div>
+      `;
+
+      info_div_2.innerHTML = `
+        <div class="cv-div">
+          <div class="name-div">
+            <h1 style="font-size: 30px; text-align: center;">
+              Lea Abi Raad
+            </h1>
+          </div>
+
+          <div class="info-div">
+            <p>
+              Email: leaabiraad@gmail.com | Phone: +961 70 634 646<br>
+              Location: Nahr Ibrahim, lebanon.
+            </p>
+          </div>
+
+          <div class="education-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Eduction
+            </h2>
+
+            <hr style="color:  rgb(79, 70, 229); margin: 0;">
+
+            <p>
+              Bachelor in Buisness Computing - Ziad University (2023 - 2027)
+            </p>
+          </div>
+
+          <div class="experience-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Experience
+            </h2>
+
+            <hr>
+
+            <ul>
+              <li><strong>Freelance Projects</strong> Created simple websites for friends and small local shops</li>
+            </ul>
+          </div>
+
+          <div class="skill-div">
+            <h2 style="color:  rgb(79, 70, 229); margin: 0;">
+              Skills
+            </h2>
+
+            <hr>
+
+            <p>
+              HTML, CSS, JavaScript <br>
+              Basic SQL and database concepts <br>
+              Microsoft Office (Word, Excel. PowerPoint) <br>
+              Beginner Knowledge in web development tools
+            </p>
+          </div>
+        </div>
+      `;
+      }
+    }
+  </script>
+
+</body>
+</html>
