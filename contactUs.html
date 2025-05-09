@@ -47,6 +47,21 @@
     a:active{
       color: red;
     }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      font-family: sans-serif;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+    }
   </style>
 </head>
 <body>
@@ -67,6 +82,33 @@
       <span>Address:</span> @jounieh, Lebanon
     </p>
   </div>
+
+  <div>
+    <form id="contactForm">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+    
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+    
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" required></textarea><br /><br />
+    
+      <button type="submit">Send</button>
+    </form>
+    
+    <p id="confirmationMessage" style="display:none; color: green; font-weight: bold;">
+      Message sent!
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('confirmationMessage').style.display = 'block';
+    });
+  </script>
 
   <a href="index.html">back to main page</a>
 </body>
